@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Egc-mM-cEI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mmi-af-2Ac">
+            <objects>
+                <viewController id="Egc-mM-cEI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VXD-XT-zo9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZkC-Xe-Fu8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h6Z-Sa-Qx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BiosferaLogo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-rI-PZq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mxS-rI-PZq" firstAttribute="top" secondItem="VXD-XT-zo9" secondAttribute="bottom" constant="76" id="T7Q-pa-0r6"/>
+                            <constraint firstItem="mxS-rI-PZq" firstAttribute="leading" secondItem="h6Z-Sa-Qx6" secondAttribute="leadingMargin" constant="23" id="VW3-90-hd6"/>
+                            <constraint firstItem="ZkC-Xe-Fu8" firstAttribute="top" secondItem="mxS-rI-PZq" secondAttribute="bottom" constant="634" id="l8V-0F-oUL"/>
+                            <constraint firstItem="mxS-rI-PZq" firstAttribute="centerX" secondItem="h6Z-Sa-Qx6" secondAttribute="centerX" id="xB3-9Y-2d2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mxS-rI-PZq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="T7Q-pa-0r6"/>
+                                <exclude reference="VW3-90-hd6"/>
+                                <exclude reference="xB3-9Y-2d2"/>
+                                <exclude reference="l8V-0F-oUL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mxS-rI-PZq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="T7Q-pa-0r6"/>
+                                <include reference="VW3-90-hd6"/>
+                                <include reference="xB3-9Y-2d2"/>
+                                <include reference="l8V-0F-oUL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foC-qN-m8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235.5" y="321.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BiosferaLogo2.png" width="454" height="73"/>
+    </resources>
+</document>

@@ -1,0 +1,31 @@
+//
+//  Biosfera.pch
+//  Biosfera
+//
+//  Created by Eugene Rozhkov on 03.02.15.
+//  Copyright (c) 2015 Nord Point. All rights reserved.
+//
+
+#ifndef Biosfera_Biosfera_pch
+#define Biosfera_Biosfera_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Quickblox/Quickblox.h>
+
+#import "LocalStorageService.h"
+#import "ChatService.h"
+#import "CharactersEscapeService.h"
+
+#import "SKU.h"
+
+#endif
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+#define kShowSplashViewControllerSegue @"ShowSplashViewControllerSegue"
+#define kShowUsersViewControllerSegue @"ShowUsersViewControllerSegue"
+#define kShowChatViewControllerSegue @"ShowChatViewControllerSegue"
+#define kShowNewChatViewControllerSegue @"ShowNewChatViewControllerSegue"
